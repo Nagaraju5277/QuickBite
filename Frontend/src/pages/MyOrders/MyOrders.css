@@ -1,0 +1,87 @@
+.my-orders {
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.my-orders h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+.my-orders .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.my-orders-order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.my-orders-order:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.my-orders-order img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.my-orders-order p {
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+  flex: 1;
+}
+
+.my-orders-order p span {
+  font-size: 14px;
+  color: #28a745;
+  margin-right: 6px;
+}
+
+.my-orders-order b {
+  color: #333;
+}
+
+.my-orders-order button {
+  padding: 6px 14px;
+  font-size: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #5f1ad7;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.my-orders-order button:hover {
+  background: #ff5722;
+}
+@media(max-width:900px){
+    .my-orders-order{
+        grid-template-columns: 1fr 2fr 1fr ;
+        row-gap: 5px;
+        font-size: 12px;
+    }
+    .my-orders-order button{
+        font-size: 10px;
+    }
+}
