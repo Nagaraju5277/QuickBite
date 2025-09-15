@@ -6,7 +6,7 @@ import Cart from './pages/cart/cart.jsx'
 import PlaceOrder from './pages/placeorder/placeorder.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import Login from './components/Login/Login.jsx'
-import Verify from './pages/verify/verify.jsx'
+import Verify from './pages/Verify/Verify.jsx'
 import MyOrders from './pages/MyOrders/MyOrders.jsx'
 
 const App = () => {
