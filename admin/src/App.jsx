@@ -8,7 +8,7 @@ import Orders from './pages/Orders/Orders'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 const App = () => {
-  const url = "https://quickbite-backend-5olu.onrender.com"
+  const url = "https://quickbite-wxvs.onrender.com/"
   return (
     <div>
       <ToastContainer/>
