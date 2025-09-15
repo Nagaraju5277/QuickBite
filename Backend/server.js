@@ -22,7 +22,7 @@ app.use(express.json())
 app.use(cors({
   origin: [
     "https://quickbite-admin-82xc.onrender.com", // Admin frontend
-    "https://quickbite-frontend.vercel.app"      // optional: customer frontend
+    "https://quickbite-frontend-o1i5.onrender.com"      // optional: customer frontend
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
