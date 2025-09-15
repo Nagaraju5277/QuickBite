@@ -19,7 +19,14 @@ const port =process.env.PORT || 4000;
 
 // middleware
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: [
+    "https://quickbite-admin-82xc.onrender.com", // Admin frontend
+    "https://quickbite-frontend.vercel.app"      // optional: customer frontend
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}))
 
 // db connection
 connectDB();
